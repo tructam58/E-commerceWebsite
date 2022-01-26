@@ -1,0 +1,368 @@
+@import "base/variables";
+@import "base/flex";
+@import "base/media";
+@import "base/grid";
+@import "base/ulties";
+@import "base/animation";
+@import "base/border";
+@import "base/tmp-checkbox";
+
+
+@import "components/header";
+@import "components/nav_header";
+@import "components/quick-btn";
+@import "components/to_top";
+@import "components/cart";
+@import "components/footer";
+@import "components/product";
+
+
+body,
+html {
+  width      : 100%;
+  font-family: 'Roboto', sans-serif;
+
+
+
+  @include xs {
+    font-size: 10px;
+  }
+
+  @include sm {
+    font-size: 11px;
+  }
+
+  @include md {
+    font-size: 12px;
+  }
+
+  @include lg {
+    font-size: 14px;
+  }
+}
+
+
+a,
+i {
+  color: black;
+}
+
+.container {
+  width : 1300px;
+  margin: 0 auto;
+}
+
+
+.top {
+  height  : 80px;
+  position: relative;
+
+  .sticky {
+    background-color: white;
+  }
+
+  header {
+
+    @include border-bottom(1px);
+
+
+  }
+
+
+}
+
+.quick-btn {
+  display: block;
+
+  i {
+    color: white;
+  }
+}
+
+.page__header {
+  width   : 100%;
+  position: relative;
+
+  img {
+    object-fit: cover;
+    width     : 100%;
+  }
+
+  &__content {
+    position      : absolute;
+    top           : 50%;
+    left          : 50%;
+    transform     : translate(-50%, -50%);
+    color         : white;
+    font-weight   : 900;
+    letter-spacing: 5px;
+    font-size     : 40px;
+  }
+}
+
+main {
+
+  .container {
+    // margin-top: 20px;
+
+
+    .menu__left {
+      width       : 18%;
+      margin-right: 20px;
+
+      .bd-bottom {
+        @include border-bottom(2px);
+        padding-bottom: 20px;
+      }
+
+      &__top {
+
+
+        .filter__button {
+          border       : 1px solid $primary-color;
+          border-radius: 1px;
+          display      : inline-block;
+          transition   : 0.3s;
+          font-size    : 16px;
+
+
+
+          &__text {
+            text-transform: uppercase;
+            display       : inline-block;
+            color         : $primary-color;
+            padding       : 6px 10px;
+            font-weight   : 800;
+
+          }
+
+          i {
+            color        : $primary-color;
+            display      : inline-block;
+            padding-right: 15px;
+
+          }
+
+          &:hover {
+            background-color: $primary-color;
+            cursor          : pointer;
+
+            .filter__button__text {
+              color: white;
+
+            }
+
+            i {
+              color: white;
+            }
+
+          }
+        }
+
+        .clear_all__button {
+
+
+          &__text {
+            display  : inline;
+            font-size: 14px;
+
+          }
+        }
+      }
+
+
+      &__title {
+        &-sub {
+          padding  : 15px 0;
+          color    : $primary-text-light-color;
+          font-size: 20px;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      &__product-categories {
+
+
+        &-content {}
+
+        #cat-select {
+          overflow: hidden;
+          border  : none;
+          height  : max-content;
+          width   : 100%;
+          display : block;
+
+
+          .haslink {
+            padding: 15px 0;
+            color  : $secondary-text-light-color;
+            @include border-bottom(1px);
+
+            &:hover {
+              color : $primary-color;
+              cursor: pointer;
+            }
+
+            &:nth-last-child(1) {
+              border-bottom: none;
+            }
+          }
+        }
+      }
+
+      &__product-filter {
+        &-button {
+          a {
+            background-color: #333;
+            display         : inline-block;
+            color           : white;
+            padding         : 15px 30px;
+            margin-top      : 10px;
+            text-transform  : uppercase;
+            font-weight     : bold;
+            transition      : 0.1s;
+            border-radius   : 2px;
+
+            &:hover {
+              background-color: $primary-color;
+            }
+          }
+
+
+        }
+
+        #slider-range {
+          margin: 20px 0 40px;
+        }
+
+        .ui-slider-horizontal {
+          height: 0.2em;
+        }
+
+        .ui-slider-horizontal .ui-slider-handle {
+          top: -0.5em;
+
+        }
+
+        .ui-widget-header {
+          background-color: #333;
+
+        }
+
+        .ui-widget.ui-widget-content {
+          background-color: #ddd;
+          border          : none;
+        }
+
+        .ui-state-default,
+        .ui-widget-content .ui-state-default {
+          background-color: #444;
+          border          : none;
+        }
+
+        .ui-slider .ui-slider-handle {
+          width : 0.8em;
+          height: 1.2em;
+        }
+      }
+
+      &__product-size {
+        &-content {}
+      }
+    }
+
+    .menu__right {
+      width     : 78%;
+      overflow  : hidden;
+      margin-top: 20px;
+
+
+      &__nav {
+        select {
+          padding      : 10px;
+          display      : inline-block;
+          border       : 1px solid rgba(#999, 0.4);
+          border-radius: 4px;
+          color        : rgba(#333, 0.8);
+        }
+
+        .sort {
+
+
+
+          #sort-select {}
+
+        }
+
+        .show {
+
+
+          &-item__select {}
+
+          &-type {
+            margin-left: 20px;
+
+            i {
+              padding  : 0 2px;
+              font-size: 20px;
+              color    : #999;
+            }
+
+            .active {
+              color: #333;
+            }
+          }
+        }
+      }
+
+
+      .product {
+
+        .container {
+
+          .product-list {
+            width: 80%;
+
+            .product-detail {
+              &:hover {
+                box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+              }
+
+
+              &-inner {
+                &:hover {
+
+                  .content .select-option {
+                    opacity: 1;
+                    display: block;
+                  }
+                }
+              }
+            }
+          }
+
+          #pagination-container {
+            display        : flex;
+            justify-content: center;
+            width          : 100%;
+            height         : 100%;
+            transform      : translateX(-10%);
+            margin-top     : 20px;
+
+
+            .paginationjs {
+
+
+
+              .paginationjs-pages {}
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,42 @@
+nav {
+  // height       : 100px;
+  border-bottom: 1px solid rgba(#999, 0.3);
+  width        : 100%;
+  padding      : 20px;
+
+
+
+
+  .container {
+    width: 100%;
+
+
+    ul {
+      li {
+        margin: 0 20px;
+
+        @include underline-when-hover(a, black, $primary-color);
+
+        a {
+          font-weight: 900;
+          font-size  : 14px;
+          margin-top : 0;
+
+          &:hover {
+            color: $primary-color;
+          }
+
+          &::after {
+            height: 2px;
+          }
+
+          .angle_down {
+            padding    : 0 5px;
+            font-weight: 400;
+            display    : inline-block;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+@mixin border-bottom($thick) {
+  border-bottom: $thick solid rgba(#999, 0.2);
+  padding      : 20px 0;
+}

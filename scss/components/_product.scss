@@ -1,0 +1,132 @@
+.product {
+
+  .container {
+
+    // display        : flex;
+    // justify-content: center;
+    // flex-direction : column;
+    // align-items    : center;
+    margin-top   : 60px;
+    margin-bottom: 60px;
+
+    h2 {
+      text-transform: capitalize;
+      font-size     : 2.5rem;
+      text-align    : center;
+      color         : #888;
+      animation     : fadeFromBottom 1.5s forwards;
+    }
+
+    .product-list {
+      // border-bottom   : 1px solid rgba(#999, 0.2);
+      height: auto;
+
+
+      .product-detail {
+        overflow: hidden;
+        height  : 470px;
+        width   : 25%;
+
+        &-inner {
+          transform      : translateY(15%);
+          position       : relative;
+          display        : flex;
+          flex-direction : column;
+          align-items    : center;
+          justify-content: end;
+          margin-bottom  : 10px;
+          transition     : 0.9s;
+
+          &:hover {
+            transform: translateY(0px);
+
+            .content .select-option {
+              opacity: 1;
+            }
+          }
+
+          img {
+            width : 250px;
+            height: calc(250 * 8/9)px;
+
+          }
+
+          .content {
+            width     : 90%;
+            text-align: center;
+            height    : auto;
+            transform : translateY(15%);
+
+
+            .pro-cat {
+              font-size  : 14px;
+              color      : #888;
+              font-weight: 300;
+            }
+
+            .pro-title {
+
+              white-space  : nowrap;
+              font-size    : 16px;
+              color        : #444;
+              font-weight  : 400;
+              overflow     : hidden;
+              text-overflow: ellipsis;
+              width        : 100%;
+            }
+
+            .price {
+              color      : black;
+              font-size  : 16px;
+              font-weight: bold;
+              margin     : 8px;
+              display    : block;
+            }
+
+            .rate {
+              padding-bottom: 30px;
+
+              a {
+                color: #999;
+
+                i {
+                  color    : #dedede;
+                  font-size: 10px;
+                }
+
+                span {
+                  margin-left: 10px;
+                }
+              }
+            }
+
+
+
+            .select-option {
+              margin-top   : 0px;
+              margin-bottom: 70px;
+              display      : none;
+
+
+
+              i {
+                color: #999;
+              }
+
+              .btn {
+                padding         : 10px 20px;
+                text-transform  : uppercase;
+                font-weight     : bold;
+                background-color: #333;
+                border-radius   : 8px;
+                margin          : 0 10px;
+                color           : white;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

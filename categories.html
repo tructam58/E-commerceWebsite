@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
+    rel="stylesheet">
+  <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="pagination/pagination.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/categories.css">
+
+  <title>Categories</title>
+</head>
+
+<body>
+
+  <!-- Header Start -->
+
+  <div class="top">
+
+    <header>
+      <div class="container flex j-between a-center">
+        <div class="bars"><i class="far fa-bars"></i></div>
+        <div class="contact flex a-center">
+          <div class="call">
+            <a href=""> NEED HELP? <br><span>(123)456-7890</span></a>
+          </div>
+          <div class="dropdown-hover flex">
+            <div class="cur-switcher dropdown">
+              <a href="">USD <i class="fas fa-angle-down"></i></a>
+              <ul class="sub-dropdown">
+                <li><a href="">USD</a></li>
+                <li><a href="">EUR</a></li>
+              </ul>
+
+            </div>
+            <div class="lang-switcher dropdown">
+              <a href="" class="dropdown">ENG <i class="fas fa-angle-down"></i></a>
+              <ul class="sub-dropdown">
+                <li><a href="">ENG</a></li>
+                <li><a href="">FRA</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="logo"><a href=""><img src="images/logo/logo-product.png" alt=""></a></div>
+        <div class="wrap flex">
+          <div class="btn-search"><a href=""><i class="icon-header fal fa-search"></i></a></div>
+          <div class="btn-login"><a href=""><i class="icon-header fal fa-user"></i></a></div>
+          <div class="btn-like"><a href=""><i class="icon-header fal fa-heart"></i></a></div>
+          <div class="btn-cart"><a href=""><i class="icon-header fal fa-shopping-bag"></i> <span
+                class="amount">0</span></a></div>
+        </div>
+      </div>
+    </header>
+
+
+
+  </div>
+
+
+
+  <nav>
+    <div class="container">
+      <ul class="flex j-center a-center">
+        <li><a href="index.html" id="home">Home</a></li>
+        <li><a href="categories.html" target="_self" id="categories">Categories <i
+              class="angle_down fal fa-angle-down"></i></a></li>
+        <li><a href="">Products <i class="angle_down fal fa-angle-down"></i></a></li>
+        <li><a href="">Pages <i class="angle_down fal fa-angle-down"></i></a></li>
+        <li><a href="">Elements <i class="angle_down fal fa-angle-down"></i></a></li>
+        <li><a href="">Blog <i class="angle_down fal fa-angle-down"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <div class="quick-btn">
+    <ul>
+
+      <li><a href=""><i class="fas fa-home"> </i><span>Demos</span></a></li>
+      <li><a href=""><i class="fas fa-info-circle"></i> <span>Documentation</span></a></li>
+      <li><a href=""><i class="fas fa-comments"></i> <span>Support</span></a></li>
+      <li><a href=""><i class="fas fa-star"></i> <span>Reviews</span></a></li>
+      <li><a href="" class="shoping-cart"><i class="fas fa-shopping-cart"></i> <span>Buy Now!</span></a></li>
+
+    </ul>
+  </div>
+
+
+  <div class="to-top">
+    <i class="fal fa-long-arrow-up"></i>
+  </div>
+  <!-- Header End  -->
+
+
+  <div class="page__header">
+    <img src="images/page-header.jpg" alt="">
+    <h2 class="page__header__content">RIODE SHOP</h2>
+  </div>
+  <main>
+    <div class="container flex row j-between ">
+      <div class="menu__left col-xs-3 col-sm-3 col-md-3 ">
+        <div class="menu__left__top flex a-center j-between bd-bottom">
+          <div class="filter__button">
+            <span class="filter__button__text">filter</span>
+            <i class="fal fa-long-arrow-left"></i>
+          </div>
+          <div class="clear_all__button">
+            <span class="clear_all__button__text">Clean All</span>
+
+          </div>
+        </div>
+
+        <div class="menu__left__product-categories hide bd-bottom">
+          <div class="menu__left__title flex j-between a-center">
+            <h3 class="menu__left__title-sub">Product Categories</h3>
+            <i class="menu__left__title-dropdown button-dropdown-content fal fa-minus"></i>
+          </div>
+          <select class="menu__left__product-categories-content hide-content" id="cat-select" size="9">
+            <option class="haslink">For Men's</option>
+            <option class="haslink">For Women's</option>
+            <option class="haslink">Men's</option>
+            <option class="haslink">New Arrivals</option>
+            <option class="haslink">Shoes</option>
+            <option class="haslink">Sporting Goods</option>
+            <option class="haslink">Summer Season's</option>
+            <option class="haslink">Watches</option>
+            <option class="haslink haslink-last">Women's</option>
+          </select>
+        </div>
+
+
+        <div class="menu__left__product-filter hide bd-bottom">
+          <div class="menu__left__title flex j-between a-center">
+            <h3 class="menu__left__title-sub">Filter By Price</h3>
+            <i class="menu__left__title-dropdown button-dropdown-content fal fa-minus"></i>
+          </div>
+          <div class="menu__left__product-filter-content hide-content ">
+            <div id="slider-range"></div>
+            <p>
+              <label for="amount">Price:</label>
+              <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+            </p>
+            <div class="menu__left__product-filter-button">
+              <a href="">Filter</a>
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="menu__left__product-size  hide bd-bottom">
+          <div class="menu__left__title flex j-between a-center">
+            <h3 class="menu__left__title-sub">Size</h3>
+            <i class="menu__left__title-dropdown button-dropdown-content fal fa-minus"></i>
+          </div>
+          <div class="menu__left__product-size-content hide-content ">
+            <form action="#">
+              <p class="size tmp-checkbox flex a-center"> <input type="checkbox" class="size" name="size" value="XL"
+                  id=""><label for="">Extra
+                  Large</label> </p>
+              <p class="size tmp-checkbox flex a-center"> <input type="checkbox" class="size" name="size" value="L"
+                  id=""><label for="">Large</label></p>
+              <p class="size tmp-checkbox flex a-center"> <input type="checkbox" class="size" name="size" value="M"
+                  id=""><label for="">Medium</label>
+              </p>
+              <p class="size tmp-checkbox flex a-center haslink-last"> <input type="checkbox" class="size" name="size"
+                  value="S" id="s" /><label for="s">Small</label></p>
+
+            </form>
+
+          </div>
+        </div>
+
+        <div class="menu__left__product-color hide bd-bottom">
+          <div class="menu__left__title flex j-between a-center">
+            <h3 class="menu__left__title-sub">Color</h3>
+            <i class="menu__left__title-dropdown button-dropdown-content fal fa-minus"></i>
+          </div>
+
+          <div class="menu__left__product-color-content hide-content ">
+            <form action="#">
+              <p class="color tmp-checkbox flex a-center"> <input type="checkbox" name="color" value="bisque"
+                  id="bisque"><label for="bisque">Bisque</label> </p>
+              <p class="color tmp-checkbox flex a-center"> <input type="checkbox" name="color" value="darkgrey"
+                  id="darkgrey"><label for="darkgrey">Darkgrey</label></p>
+              <p class="color tmp-checkbox flex a-center"> <input type="checkbox" name="color" id="light-brown"
+                  value="light-brown"><label for="light-brown">Light Brown</label></p>
+              <p class="color tmp-checkbox flex a-center"> <input type="checkbox" name="color" id="light-green"
+                  value="light-green" id=""><label for="light-green">Light Green</label></p>
+              <p class="color tmp-checkbox flex a-center haslink-last"> <input type="checkbox" name="color"
+                  value="skyblue" id="skyblue" /><label for="skyblue">Skyblue</label></p>
+              <p class="color tmp-checkbox flex a-center haslink-last"> <input type="checkbox" name="color"
+                  value="yellow" id="yellow" /><label for="yellow">Yellow</label></p>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="menu__right col-md-8 col-xs-8 col-sm-8">
+        <div class="menu__right__nav flex j-between a-center">
+          <div class="sort">Sort by:
+            <select name="" id="sort-select">
+              <option value="a">Default sorting</option>
+              <option value="b">Sort by popularity</option>
+              <option value="c">Sort by average rating</option>
+              <option value="d">Sort by latest</option>
+              <option value="r">Sort by price: low to high</option>
+              <option value="w">Sort by price: high to low</option>
+            </select>
+          </div>
+          <div class="show flex a-center">
+            <div class="show-select">
+              <label>Show:</label>
+              <select name="amount-items" id="show-item__select">
+                <option value="8">8</option>
+                <option value="12">12</option>
+                <option value="16" selected>16</option>
+              </select>
+            </div>
+            <div class="show-type">
+              <i class="show-type-thlist fas fa-th-list"></i>
+              <i class="show-type-th fas fa-th active"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="container">
+
+            <div class="product-list row pro-list">
+            </div>
+
+            <div id="pagination-container"></div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </main>
+
+
+
+  <!-- Cart start -->
+  <div class="shopping">
+    <div class="shopping-cart">
+      <div class="container">
+        <h3 class="title-cart">SHOPPING CART</h3>
+        <div class="list-pro-cart ">
+          <div class="item-cart flex">
+            <img src="images/shoe/1/1.jpg" alt="">
+            <div class="info-pro">
+              <a href="" class="name-pro">Simple Adidas Sportwear</a>
+              <span class="amount">1 x</span> <span class="price">120$</span>
+            </div>
+            <i class="delete far fa-minus-circle"></i>
+          </div>
+        </div>
+        <div class="subtotal flex a-center j-between">
+          <span id="subtotal">Subtotal:</span>
+          <div class="total">$0.00</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- Cart end -->
+
+
+
+
+
+  <!-- Footer Start -->
+  <footer>
+    <div class="subscribe">
+      <div class="container flex j-between a-center">
+        <div class="logo"><a href=""><img src="images/footer-logo.png" alt=""></a></div>
+        <div class="email-input flex a-center">
+          <div class="text">
+            <h3>Subscribe to our Newsletter</h3>
+            <span>Get all the latest information, Sales and Offers.</span>
+          </div>
+          <input type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address here...'"
+            placeholder="Email address here...">
+          <button class="btn-sub">Subscribe <i class="fal fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="contacts ">
+      <div class="container flex j-between">
+        <div class="contact-info contact">
+          <h2>Contact Info</h2>
+          <ul>
+            <li><span>PHONE:</span> <br><a href="tel:+">Toll Free (123) 456-7890</a></li>
+            <li><span>EMAIL:</span> <br><a href="mailto:">mail@Riode.com</a></li>
+          </ul>
+
+        </div>
+        <div class="account contact">
+          <h2>My Account</h2>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Order History</a></li>
+            <li><a href="">Returns</a></li>
+            <li><a href="">Custom Service</a></li>
+            <li><a href="">Terms & Condition</a></li>
+          </ul>
+        </div>
+        <div class="service contact">
+          <h2>Customer Service</h2>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Order History</a></li>
+            <li><a href="">Returns</a></li>
+            <li><a href="">Custom Service</a></li>
+            <li><a href="">Terms & Condition</a></li>
+          </ul>
+        </div>
+        <div class="contact-info contact">
+          <h2>Contact Info</h2>
+          <ul>
+            <li><a href="">Sign In</a></li>
+            <li><a href="">View Cart</a></li>
+            <li><a href="">My Wishlist</a></li>
+            <li><a href="">Track My Order</a></li>
+            <li><a href="">Help</a></li>
+          </ul>
+
+        </div>
+        <div class="popular contact">
+          <h2>Popular posts</h2>
+          <div class="sub-pop flex j-between">
+
+            <div class="left">
+              <div class="post flex a-center j-between">
+                <span class="date">2 <br><span class="month">FEB</span></span>
+                <a href="">See how your popular posts are doing directly from your admin area.</a>
+              </div>
+              <div class="post flex a-center j-between">
+                <span class="date">27 <br><span class="month">OCT</span></span>
+                <a href="">Order your popular list by comments, views (default) or average views per day!</a>
+              </div>
+            </div>
+            <div class="right">
+              <div class="post flex a-center j-between">
+                <span class="date">7 <span class="month">NOV</span></span>
+                <a href="">Each site on the network can have its own popular posts list!</a>
+              </div>
+              <div class="post flex a-center j-between">
+                <span class="date">19 <br><span class="month">DEC</span></span>
+                <a href="">Show the translated version of your popular posts!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="commerce">
+      <div class="container flex a-center j-between">
+        <div class="logo"><img src="images/payment.png" alt=""></div>
+        <div class="text">Riode eCommerce © 2021. All Rights Reserved</div>
+        <div class="social-media">
+          <ul class="flex j-between">
+            <li class="fb"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li class="tw"><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li class="in"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="owlcarousel/owl.carousel.min.js"></script>
+<script src="pagination/pagination.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/to_top.js"></script>
+<script src="js/categories.js"></script>
+<!-- <script src="js/product.js"></script> -->
+<script src="js/sticky.js"></script>
+<!-- <script src="js/quick-btn.js"></script> -->
+
+</html>

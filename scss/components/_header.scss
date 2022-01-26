@@ -1,0 +1,283 @@
+// @import "base/media";
+// @import "base/variables";
+
+.dropdown {
+  position  : relative;
+  display   : inline-block;
+  transition: 0.2s;
+
+  .sub-dropdown {
+    display   : none;
+    position  : absolute;
+    background: white;
+    left      : 0;
+    width     : 100%;
+    text-align: center;
+
+    li {
+      a {
+        color: #333;
+
+
+      }
+    }
+  }
+
+  &:hover {
+    .sub-dropdown {
+      transition: 0.5s;
+      display   : block;
+
+    }
+  }
+}
+
+.sticky {
+  background-color: black;
+}
+
+header {
+  width        : 100%;
+  height       : 80px;
+  position     : fixed;
+  z-index      : 2;
+  // top       : 0px;
+
+
+
+  .container {
+    height : auto;
+    width  : 100%;
+    padding: 15px 20px;
+
+
+
+    a {
+      font-size: 12px;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    .bars {
+      display: none;
+    }
+
+    .contact {
+      .call {
+        a {
+          span {
+            font-size  : 16px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .cur-switcher {
+        margin  : 0 20px;
+        position: relative;
+
+
+        .sub-dropdown {
+          display : none;
+          position: absolute;
+        }
+
+        &:hover {
+          .sub-dropdown {
+            display: block;
+
+          }
+        }
+      }
+
+
+    }
+
+    .logo {
+      a {
+        img {
+          width : 100%;
+          height: 40px;
+        }
+      }
+    }
+
+    .wrap {
+      .icon-header {
+        font-size  : 24px;
+        margin-left: 20px;
+      }
+
+      .btn-cart {
+        position: relative;
+
+        .amount {
+          color        : white;
+          position     : absolute;
+          top          : 0;
+          right        : 0;
+          transform    : translate(50%, -40%);
+          text-align   : center;
+          border-radius: 50px;
+          background   : $primary-color;
+          width        : 20px;
+          height       : 20px;
+          font-size    : 14px;
+        }
+
+        // &::after {
+        //   content         : "";
+        //   position        : absolute;
+        //   // color        : white;
+        //   color           : red;
+        //   background      : $primary-color;
+        //   width           : 20px;
+        //   height          : 20px;
+        //   font-size       : 12px;
+        //   border-radius   : 50%;
+        //   top             : -5px;
+        //   right           : -12px;
+        //   text-align      : center;
+        // }
+      }
+    }
+  }
+
+  @include xs {
+    .container {
+      .bars {
+        display: block;
+
+        i {
+          // color: white;
+          font-size: 32px;
+        }
+      }
+
+      .contact {
+        .call {
+          display: none;
+        }
+
+        .dropdown-hover {
+          display: none;
+        }
+      }
+
+
+      .wrap {
+
+        .btn-search,
+        .btn-like {
+          display: none;
+        }
+      }
+    }
+  }
+
+
+
+  @include sm {
+    .container {
+      .bars {
+        display: block;
+
+        i {
+          // color    : white;
+          font-size: 32px;
+        }
+      }
+
+      .contact {
+        .call {
+          display: none;
+        }
+
+        .dropdown-hover {
+          display: none;
+        }
+      }
+
+
+
+      .wrap {
+
+        .btn-search,
+        .btn-like {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @include md {
+    .container {
+      .bars {
+        display: block;
+
+        i {
+          // color    : white;
+          font-size: 32px;
+        }
+      }
+
+      .contact {
+        .call {
+          display: none;
+        }
+
+        .dropdown-hover {
+          display  : block;
+          transform: translateX(-100%);
+
+        }
+      }
+
+
+
+      .wrap {
+
+        .btn-search,
+        .btn-like {
+          display: none;
+        }
+
+      }
+    }
+  }
+
+  @include lg {
+
+    .container {
+
+
+      .bars {
+        display: none;
+      }
+
+      .contact {
+        // display: flex;
+
+        .call {
+          display: block;
+        }
+
+        .dropdown-hover {
+          // display  : block;
+          transform: translateX(0);
+
+        }
+      }
+
+      .wrap {
+
+        .btn-search,
+        .btn-like {
+          display: flex;
+        }
+      }
+    }
+  }
+}

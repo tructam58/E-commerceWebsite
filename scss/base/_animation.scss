@@ -1,0 +1,118 @@
+@keyframes fadeFromLeft {
+  from {
+    opacity  : 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity  : 1;
+    transform: translateX(0px);
+
+  }
+
+}
+
+@keyframes fadeFromBottom {
+  from {
+    opacity  : 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity  : 1;
+    transform: translateY(0px);
+
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeShadow {
+  from {
+    display: none;
+
+    opacity    : 0;
+    text-shadow: 1px 2px 20px white;
+    transform  : translateZ(-50%);
+
+  }
+
+  to {
+    opacity    : 1;
+    text-shadow: none;
+    transform  : translateZ(0%);
+
+  }
+
+}
+
+
+@keyframes show {
+  from {
+    transform: translateY(6px);
+
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes hide {
+  from {
+    transform: translateY(0px);
+
+  }
+
+  to {
+    transform: translateY(6px);
+  }
+}
+
+
+@keyframes fromRight {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+
+
+@keyframes rotate-and-scale-hover {
+  from {
+    transform: rotate(45deg) scale(2);
+    opacity  : 0;
+  }
+
+  to {
+    transform: rotate(0deg) scale(1);
+    opacity  : 1;
+  }
+
+}
+
+@keyframes rotate-and-scale {
+  from {
+    transform: rotate(0deg) scale(1);
+    opacity  : 1;
+  }
+
+  to {
+    transform: rotate(45deg) scale(2);
+    opacity  : 0;
+  }
+
+
+}

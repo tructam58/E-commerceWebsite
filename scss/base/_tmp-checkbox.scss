@@ -1,0 +1,18 @@
+.tmp-checkbox {
+  @include border-bottom(1px);
+
+  [type=checkbox] {
+    margin-right: 10px;
+    display     : inline-block;
+    width       : 15px;
+    height      : 15px;
+
+
+
+  }
+
+  &:nth-last-child(1) {
+    border-bottom: none;
+  }
+
+}

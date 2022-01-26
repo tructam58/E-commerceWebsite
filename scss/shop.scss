@@ -1,0 +1,75 @@
+@import "base/variables";
+@import "base/flex";
+@import "base/media";
+@import "base/grid";
+@import "base/ulties";
+@import "base/animation";
+
+
+@import "components/header";
+@import "components/nav_header";
+@import "components/quick-btn";
+@import "components/to_top";
+@import "components/cart";
+@import "components/footer";
+
+
+body,
+html {
+  width         : 100%;
+  // font-family: 'Poppins', sans-serif;
+  font-family   : 'Lato', sans-serif;
+
+
+  @include xs {
+    font-size: 10px;
+  }
+
+  @include sm {
+    font-size: 11px;
+  }
+
+  @include md {
+    font-size: 12px;
+  }
+
+  @include lg {
+    font-size: 14px;
+  }
+}
+
+
+a,
+i {
+  color: black;
+}
+
+.container {
+  width : 1300px;
+  margin: 0 auto;
+}
+
+
+.top {
+  height  : 80px;
+  position: relative;
+
+  .sticky {
+    background-color: white;
+  }
+
+  header {
+
+    border-bottom: 1px solid rgba(#999, 0.3);
+  }
+
+
+}
+
+.quick-btn {
+  display: block;
+
+  i {
+    color: white;
+  }
+}
