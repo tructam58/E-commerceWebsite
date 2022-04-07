@@ -7,7 +7,7 @@
 
 # Tech stack: 
   HTML
-  SCSS
+  SCSS / CSS
   JavaScript
   JQuery
   ...
