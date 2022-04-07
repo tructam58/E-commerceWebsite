@@ -850,29 +850,23 @@ main .container .menu__left__title:hover {
 	cursor: pointer;
 }
 
-main .container .menu__left__product-categories #cat-select {
+main .container .menu__left__product-categories-content a {
 	display: block;
-	overflow: hidden;
-	width: 100%;
-	height: -webkit-max-content;
-	height: -moz-max-content;
-	height: max-content;
-	border: none;
 }
 
-main .container .menu__left__product-categories #cat-select .haslink {
+main .container .menu__left__product-categories-content .haslink {
 	padding: 15px 0;
 	padding: 20px 0;
 	color: #555;
 	border-bottom: 1px solid rgba(153, 153, 153, .2);
 }
 
-main .container .menu__left__product-categories #cat-select .haslink:hover {
+main .container .menu__left__product-categories-content .haslink:hover {
 	cursor: pointer;
 	color: #0085c8;
 }
 
-main .container .menu__left__product-categories #cat-select .haslink:nth-last-child(1) {
+main .container .menu__left__product-categories-content .haslink:nth-last-child(1) {
 	border-bottom: none;
 }
 

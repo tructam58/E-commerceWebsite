@@ -1,4 +1,4 @@
-const AMOUNT_ITEMS_DEFAULT_WILL_SHOW = 3;
+const AMOUNT_ITEMS_DEFAULT_WILL_SHOW = 16;
 const PRODUCTS = [
   {
     id: 1,
@@ -285,18 +285,7 @@ const render = PRODUCTS
 
 
 
-// $(document).ready(function (e) {
-//   e.preventDefault;
-//   $('#pagination-container').pagination({
-//     dataSource: PRODUCTS,
-//     pageSize: 20,
-//     showPrevious: true,
-//     showNext: true,
 
-
-//   })
-
-// });
 
 
 // type list and type large button
@@ -325,6 +314,8 @@ $("#sort-select").find(":selected").click(function (e) {
 });
 
 
+
+// BUTTON SHOW: AMOUNT ITEMS WHILL SHOW
 function renderItemDefault(amountItem) {
   $(`.product-detail:gt(${amountItem})`).hide();
 
@@ -332,24 +323,41 @@ function renderItemDefault(amountItem) {
 //renderItemDefault(AMOUNT_ITEMS_DEFAULT_WILL_SHOW);
 
 function getValueItemWillShow() {
-  return $("#show-item__select").val();
+  return $("#show-item__select").val() ? $("#show-item__select").val() : AMOUNT_ITEMS_DEFAULT_WILL_SHOW;
 }
-
-// $("#show-item__select").change(function (e) {
-//   e.preventDefault();
-//   const valueItemWillShow = getValueItemWillShow();
-//   let a = +valueItemWillShow - 1;
-//   console.log(`product-detail:gt(${a})`);
-//   // $(`.product-detail:gt(${a})`).hide();
-
-
-// });
 $("#show-item__select").on("change", function () {
   const valueItemWillShow = getValueItemWillShow();
-  let a = +valueItemWillShow - 1;
-  console.log(`product-detail:gt(${a})`);
+  var amountItemsWillShow = +valueItemWillShow - 1;
+  // var amtItems = amountItemsWillShow;
+  console.log(`product-detail:gt(${amountItemsWillShow})`);
   $(".product-detail").show();
-  $(`.product-detail:gt(${a})`).hide();
+  $(`.product-detail:gt(${amountItemsWillShow})`).hide();
+
+
+});
+
+// let amountItemsWillShow = getValueItemWillShow() != AMOUNT_ITEMS_DEFAULT_WILL_SHOW ? getValueItemWillShow() : AMOUNT_ITEMS_DEFAULT_WILL_SHOW;
+$('#pagination-container').pagination({
+  dataSource: PRODUCTS,
+  pageSize: AMOUNT_ITEMS_DEFAULT_WILL_SHOW,
+  showPrevious: true,
+  showNext: true,
+
+
+})
+
+$(document).on("change", function (e) {
+  e.preventDefault;
+
+  $('#pagination-container').pagination({
+    dataSource: PRODUCTS,
+    pageSize: getValueItemWillShow(),
+    showPrevious: true,
+    showNext: true,
+
+
+  })
+
 });
 
 
@@ -357,7 +365,7 @@ $("#show-item__select").on("change", function () {
 
 
 
-
+/****CART***/
 const item = localStorage.getItem("item");
 
 const itemObject = JSON.parse(item);
@@ -479,3 +487,5 @@ goToProductPage(".btn");
 $("#home").click(function () {
   window.location.href = "/index.html"
 })
+
+

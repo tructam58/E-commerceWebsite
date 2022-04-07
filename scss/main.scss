@@ -148,10 +148,18 @@ i {
 
   @include xs {
     font-size: 10px;
+
+    nav {
+      display: none;
+    }
   }
 
   @include sm {
     font-size: 11px;
+
+    nav {
+      display: none;
+    }
   }
 
   @include md {
@@ -669,6 +677,7 @@ i {
     top     : 20%;
     left    : 5%;
     z-index : 1;
+    display : block;
 
 
     .nav__head__share {

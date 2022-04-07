@@ -1046,6 +1046,7 @@ i {
 	z-index: 1;
 	top: 20%;
 	left: 5%;
+	display: block;
 }
 
 .top-banner nav .nav__head__share {
@@ -1893,6 +1894,10 @@ html {
 	font-size: 11px;
 }
 
+.top-banner nav {
+	display: none;
+}
+
 .top-banner .banner .owl-nav button {
 	display: none;
 }
@@ -2198,6 +2203,10 @@ html {
 
 .top-banner {
 	font-size: 10px;
+}
+
+.top-banner nav {
+	display: none;
 }
 
 .top-banner .banner .owl-nav button {

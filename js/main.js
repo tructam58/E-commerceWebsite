@@ -205,7 +205,7 @@ const product = [
 
 
 
-
+//slider banner 
 $(".banner").owlCarousel({
   items: 1,
   autoplay: true,
@@ -243,8 +243,8 @@ $(window).scroll(function () {
   }
 })
 
-//modal
 
+//modal
 let showModal = (time) => {
   setTimeout(() => { $(".modal").fadeIn(); }, time);
 }

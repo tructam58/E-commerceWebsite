@@ -186,15 +186,10 @@ main {
       &__product-categories {
 
 
-        &-content {}
-
-        #cat-select {
-          overflow: hidden;
-          border  : none;
-          height  : max-content;
-          width   : 100%;
-          display : block;
-
+        &-content {
+          a {
+            display: block;
+          }
 
           .haslink {
             padding: 15px 0;
@@ -211,6 +206,30 @@ main {
             }
           }
         }
+
+        // #cat-select {
+        //   overflow: hidden;
+        //   border  : none;
+        //   height  : max-content;
+        //   width   : 100%;
+        //   display : block;
+
+
+        //   .haslink {
+        //     padding: 15px 0;
+        //     color  : $secondary-text-light-color;
+        //     @include border-bottom(1px);
+
+        //     &:hover {
+        //       color : $primary-color;
+        //       cursor: pointer;
+        //     }
+
+        //     &:nth-last-child(1) {
+        //       border-bottom: none;
+        //     }
+        //   }
+        // }
       }
 
       &__product-filter {
